@@ -5,8 +5,7 @@ COPY pom.xml .
 COPY src src
 RUN mvn package
 
-FROM openjdk:12-alpine
+FROM alpine:3.8
 
-COPY --from=build /app/target/jlink-ground-up-1.0.jar /app/target/jlink-ground-up.jar
-ENTRYPOINT ["java", "-jar"]
-CMD ["/app/target/jlink-ground-up.jar"]
+COPY --from=build /app/target/jlink-image /app
+ENTRYPOINT ["/app/bin/hello"]
