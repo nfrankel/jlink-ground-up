@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ch.frankel.blog.jlink</groupId>
     <artifactId>jlink-ground-up</artifactId>
-    <version>1.4</version>
+    <version>1.4.1</version>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -66,6 +66,69 @@
                                     </artifact>
                                     <moduleInfo>
                                         <name>com.google.common</name>
+                                    </moduleInfo>
+                                </module>
+                                <module>
+                                    <artifact>
+                                        <groupId>com.google.code.findbugs</groupId>
+                                        <artifactId>jsr305</artifactId>
+                                    </artifact>
+                                    <moduleInfo>
+                                        <name>javax.annotation.jsr305</name>
+                                    </moduleInfo>
+                                </module>
+                                <module>
+                                    <artifact>
+                                        <groupId>com.google.guava</groupId>
+                                        <artifactId>listenablefuture</artifactId>
+                                    </artifact>
+                                    <moduleInfo>
+                                        <name>com.google.common.listenablefuture</name>
+                                    </moduleInfo>
+                                </module>
+                                <module>
+                                    <artifact>
+                                        <groupId>org.codehaus.mojo</groupId>
+                                        <artifactId>animal-sniffer-annotations</artifactId>
+                                    </artifact>
+                                    <moduleInfo>
+                                        <name>org.codehaus.mojo.animalsniffer</name>
+                                    </moduleInfo>
+                                </module>
+                                <module>
+                                    <artifact>
+                                        <groupId>com.google.errorprone</groupId>
+                                        <artifactId>error_prone_annotations</artifactId>
+                                    </artifact>
+                                    <moduleInfo>
+                                        <name>com.google.errorprone.annotations</name>
+                                    </moduleInfo>
+                                </module>
+                                <module>
+                                    <artifact>
+                                        <groupId>com.google.guava</groupId>
+                                        <artifactId>failureaccess</artifactId>
+                                    </artifact>
+                                    <moduleInfo>
+                                        <name>com.google.common.failureaccess</name>
+                                    </moduleInfo>
+                                </module>
+                                <module>
+                                    <artifact>
+                                        <groupId>org.checkerframework</groupId>
+                                        <artifactId>checker-qual</artifactId>
+                                    </artifact>
+                                    <moduleInfo>
+                                        <name>org.checkerframework.checkerqual</name>
+                                    </moduleInfo>
+                                </module>
+                                <module>
+                                    <artifact>
+                                        <groupId>com.google.j2objc</groupId>
+                                        <artifactId>j2objc-annotations</artifactId>
+                                    </artifact>
+                                    <moduleInfo>
+                                        <name>com.google.j2objc.annotations</name>
                                     </moduleInfo>
                                 </module>
                             </modules>
